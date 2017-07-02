@@ -1,0 +1,22 @@
+{
+  "name": "malta-umd",
+  "version": "1.0.0",
+  "description": "umd plugin for Malta",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedeghe/malta-umd.git"
+  },
+  "keywords": [
+    "umd"
+  ],
+  "author": "Federico Ghedina <federico.ghedina@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fedeghe/malta-umd/issues"
+  },
+  "homepage": "https://github.com/fedeghe/malta-umd#readme"
+  "dependencies": {
+    "malta": ">=3.5.5"
+  }
+}
