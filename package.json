@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/fedeghe/malta-umd/issues"
   },
-  "homepage": "https://github.com/fedeghe/malta-umd#readme"
+  "homepage": "https://github.com/fedeghe/malta-umd#readme",
   "dependencies": {
     "malta": ">=3.5.5"
   }
