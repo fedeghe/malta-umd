@@ -5,11 +5,11 @@
 [![npm downloads](https://img.shields.io/npm/dm/malta-umd.svg)](https://npmjs.org/package/malta-umd)  
 ---  
 
-This plugin can be used on: **.js** files and even on **.coffee**, **.ts** and **.jsx** files after using the right plugin
+This plugin can be used on: **.js** files and even on **.coffee**, **.ts** and **.jsx** files after using the right plugin.  
 
 Options :   
-    - **name** : the name of the module to be published
-    - __wrap__ : either the code must be wrapped or not in a `function(){}`, default false
+    - **name** : the name of the module to be published  
+    - __wrap__ : either the code must be wrapped or not in a `function(){}`, default false  
 
 The code passed to the plugin should be a function that returns the object literal:
 
@@ -21,26 +21,22 @@ function () {
 }
 ```
 
-but if `wrap:true` is passed then it is expectd to be just the content of the function:
+but if `wrap:true` is passed then it is expectd to be just the content of the function:  
 ```
 function foo(){...}
 function foofoo(){...}
 return {foo:foo, foofoo:foofoo}
 ```
 
-
- **warning** : use this plugin only for development purposes
-
-
 Sample usage:  
 ```
 malta app/source/mod.js public -plugins=malta-umd[name:\"myMod\"]
 ```
-or in the .json file :
+or in the .json file :  
 ```
 "app/source/mod.js" : "public -plugins=malta-umd[name:\"myMod\"]"
 ```
-or in a script : 
+or in a script :  
 ``` js
 var Malta = require('malta');
 Malta.get().check([
