@@ -8,7 +8,9 @@
     "url": "https://fedeghe@github.com/fedeghe/malta-umd.git"
   },
   "keywords": [
-    "umd"
+    "malta",
+    "malta plugin",
+    "malta umd plugin"
   ],
   "author": "Federico Ghedina <federico.ghedina@gmail.com>",
   "license": "MIT",
