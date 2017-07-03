@@ -10,7 +10,7 @@ function malta_umd(o, options) {
 		msg,
 		root,
 		pluginName = path.basename(path.dirname(__filename)),
-		wrap = 'wrap' in options && options.wrap ? 
+		maywrap = 'wrap' in options && options.wrap ? 
 			`function (){
 				${o.content}
 			}`
@@ -35,11 +35,12 @@ function malta_umd(o, options) {
 		}
 		root.${options.name} = fn.call(root);
 	}
-})(${wrap});`;
+})(${maywrap});`;
 ////// TPL end
 
 	return function (solve, reject){
-		fs.writeFile(o.name, tpl, function(err) {
+		o.content = tpl;
+		fs.writeFile(o.name, o.content, function(err) {
 			err && self.doErr(err, o, pluginName);
 			msg += 'plugin ' + pluginName.white() + ' wrote ' + o.name +' (' + self.getSize(o.name) + ')';
 			solve(o);
