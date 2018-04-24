@@ -1,6 +1,6 @@
 {
   "name": "malta-umd",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "umd plugin for Malta",
   "main": "index.js",
   "repository": {
@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/fedeghe/malta-umd#readme",
   "dependencies": {
-    "malta": ">=3.5.5"
+    "malta": ">=3.8.3"
   }
 }
