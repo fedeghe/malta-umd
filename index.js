@@ -43,7 +43,9 @@ function malta_umd(o, options) {
 		fs.writeFile(o.name, o.content, function(err) {
 			err && self.doErr(err, o, pluginName);
 			msg += 'plugin ' + pluginName.white() + ' wrote ' + o.name +' (' + self.getSize(o.name) + ')';
-			solve(o);
+			err
+                ? reject(`Plugin ${pluginName} write error:\n${err}`)
+                : solve(o);
 			self.notifyAndUnlock(start, msg);
 		});
 	};
