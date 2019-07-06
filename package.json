@@ -1,6 +1,6 @@
 {
   "name": "malta-umd",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "umd plugin for Malta",
   "main": "index.js",
   "repository": {
