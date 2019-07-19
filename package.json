@@ -1,24 +1,24 @@
 {
-  "name": "malta-umd",
-  "version": "1.0.5",
-  "description": "umd plugin for Malta",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://fedeghe@github.com/fedeghe/malta-umd.git"
-  },
-  "keywords": [
-    "malta",
-    "malta plugin",
-    "malta umd plugin"
-  ],
-  "author": "Federico Ghedina <federico.ghedina@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/fedeghe/malta-umd/issues"
-  },
-  "homepage": "https://github.com/fedeghe/malta-umd#readme",
-  "dependencies": {
-    "malta": ">=3.8.14"
-  }
+    "name": "malta-umd",
+    "version": "1.0.5",
+    "description": "umd plugin for Malta",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://fedeghe@github.com/fedeghe/malta-umd.git"
+    },
+    "keywords": [
+        "malta",
+        "malta plugin",
+        "malta umd plugin"
+    ],
+    "author": "Federico Ghedina <fedeghe@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/fedeghe/malta-umd/issues"
+    },
+    "homepage": "https://github.com/fedeghe/malta-umd#readme",
+    "dependencies": {
+        "malta": ">=3.8.14"
+    }
 }
