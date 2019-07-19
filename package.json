@@ -19,6 +19,6 @@
     },
     "homepage": "https://github.com/fedeghe/malta-umd#readme",
     "dependencies": {
-        "malta": ">=3.8.14"
+        "malta": "4.0.4"
     }
 }
