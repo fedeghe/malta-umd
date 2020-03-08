@@ -1,6 +1,5 @@
 ---
 [![npm version](https://badge.fury.io/js/malta-umd.svg)](http://badge.fury.io/js/malta-umd)
-[![Dependencies](https://david-dm.org/fedeghe/malta-umd.svg)](https://david-dm.org/fedeghe/malta-umd)
 [![npm downloads](https://img.shields.io/npm/dt/malta-umd.svg)](https://npmjs.org/package/malta-umd)
 [![npm downloads](https://img.shields.io/npm/dm/malta-umd.svg)](https://npmjs.org/package/malta-umd)  
 ---  

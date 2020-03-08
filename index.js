@@ -1,24 +1,17 @@
-var path = require('path'),
+const path = require('path'),
 	fs = require('fs');
 
-// some credits has to be given to https://www.npmjs.com/package/umd
+// credits https://www.npmjs.com/package/umd
 // 
 function malta_umd(o, options) {
-	var self = this,
-		name = o.name,
+	const self = this,
 		start = new Date(),
-		msg,
-		root,
 		pluginName = path.basename(path.dirname(__filename)),
-		maywrap = 'wrap' in options && options.wrap ? 
-			`function (){
-				${o.content}
-			}`
-			:
-			`${o.content}`;
-
-/////// TPL begin
-		tpl = `(function(fn) {
+        maywrap = 'wrap' in options && options.wrap
+            ? `function (){${o.content}}`
+			: `${o.content}`,
+    /////// TPL begin
+        tpl = `(function(fn) {
 	if (typeof exports === "object" && typeof module !== "undefined") {
 		module.exports = fn();
 	} else if (typeof define === "function" && define.amd) {
@@ -37,10 +30,11 @@ function malta_umd(o, options) {
 	}
 })(${maywrap});`;
 ////// TPL end
+    let msg, root;
 
-	return function (solve, reject){
+	return (solve, reject) => {
 		o.content = tpl;
-		fs.writeFile(o.name, o.content, function(err) {
+		fs.writeFile(o.name, o.content, err => {
 			err && self.doErr(err, o, pluginName);
 			msg += 'plugin ' + pluginName.white() + ' wrote ' + o.name +' (' + self.getSize(o.name) + ')';
 			err
