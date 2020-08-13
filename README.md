@@ -7,7 +7,7 @@
 This plugin can be used on: **.js** files and even on **.coffee**, **.ts** and **.jsx** files after using the right plugin.  
 
 Options :   
-    - **name** : the name of the module to be published  
+    - **name/s** : the name/s of the module to be published, use a string for `name` either an array of strings for `names`
     - __wrap__ : either the code must be wrapped or not in a `function(){}`, default false  
 
 The code passed to the plugin should be a function that returns the object literal:
