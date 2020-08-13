@@ -25,12 +25,8 @@ function malta_umd(o, options) {
 			root = self;
 		} else {
 			root = this;
-        }
-        ${options.name && `root.${options.name} = fn.call(root);`}
-        ${options.names && options.names.reduce(function (acc, n) {
-            acc += `root.${n} = fn.call(root);`
-            return acc
-        }, '')}
+		}
+		root.${options.name} = fn.call(root);
 	}
 })(${maywrap});`;
 ////// TPL end
