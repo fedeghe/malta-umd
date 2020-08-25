@@ -31,7 +31,7 @@ function malta_umd(o, options) {
 	}
 })(${maywrap});`;
 ////// TPL end
-    let msg, root;
+    let msg = '', root;
 
 	return (solve, reject) => {
 		o.content = tpl;
