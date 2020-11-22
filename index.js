@@ -12,7 +12,7 @@ function malta_umd(o, options) {
 			: `${o.content}`,
     /////// TPL begin
         tpl = `(function(fn) {
-    /* istanbul ignore next */
+            var root
 	if (typeof exports === "object" && typeof module !== "undefined") {
 		module.exports = fn();
 	} else if (typeof define === "function" && define.amd) {
